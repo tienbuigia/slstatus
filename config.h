@@ -66,5 +66,6 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format              argument */
 	{ run_command, "^B3^^C0^[VOL %s]",  "pamixer --get-volume-human" },
-	{ datetime, "^B2^^C0^[%s]",         "%F %T" },
+	{ datetime, "^B2^^C0^[%s]",         "%F" },
+	{ datetime, "^B4^^C15^[%s]",         "%T" },
 };
