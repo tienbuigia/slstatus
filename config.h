@@ -65,9 +65,9 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format              argument */
-	{ cpu_perc, "^b#282828^ ^B6^^C0^ 龍 ^B14^^C0^%s%%", NULL },
-	{ disk_free, "^b#282828^ ^B1^^C15^  ^B9^^C0^%s",  "/" },
-	{ disk_free, "^b#282828^ ^B7^^C0^  ^B15^^C0^%s",  "/home" },
+	/* { cpu_perc, "^b#282828^ ^B6^^C0^ 龍 ^B14^^C0^%s%%", NULL }, */
+	/* { battery_state, "^b#282828^ ^B1^^C15^  ^B9^^C0^%s",  "BAT0" }, */
+	{ battery_perc, "^b#282828^ ^B7^^C15^  ^B15^^C0^%s%%",  "BAT0" },
 	{ run_command, "^b#282828^ ^B2^^C0^ 墳 ^B10^%s",  "pamixer --get-volume-human" },
 	{ datetime, "^b#282828^ ^B3^^C0^  ^B11^%s",         "%F" },
 	{ datetime, "^b#282828^ ^B4^^C15^  ^B12^^C0^%s",         "%T" },
