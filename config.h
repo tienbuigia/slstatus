@@ -66,8 +66,12 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format              argument */
 	{ battery_perc, "^b#282828^ ^B7^^C15^  ^B15^^C0^%s%%",  "BAT0" },
+	{ battery_state, "^B15^^C0^%s",  "BAT0" },
+	{ run_command, "^b#282828^ ^B1^^C15^  ^B9^^C0^%s%%",  "brillo -qG" },
 	{ run_command, "^b#282828^ ^B2^^C0^ 墳 ^B10^%s",  "pamixer --get-volume-human" },
 	{ datetime, "^b#282828^ ^B3^^C0^  ^B11^%s",         "%F" },
 	{ datetime, "^b#282828^ ^B4^^C15^  ^B12^^C0^%s",         "%T" },
+	{ wifi_essid, "^b#282828^ ^B6^^C0^%s",         "wlan0" },
+	{ wifi_perc, "^B14^^C0^%s%%",         "wlan0" },
 	{ run_command, "^b#282828^ ^B5^^C0^  ^B13^%s",  "echo 'ANH YEU NHUNG'" },
 };
